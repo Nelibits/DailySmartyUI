@@ -1,7 +1,9 @@
-import { combineReducers } from 'redux';
+import { createStore, combineReducers } from 'redux';
+import { Provider } from 'react-redux';
+import { reducer as formReducer } from 'redux-form';
 
 const rootReducer = combineReducers({
-  state: (state = {}) => state
+  form: formReducer
 });
 
 export default rootReducer;
