@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import Logo from './logo';
+import SearchBar from './search-bar';
+import RecentPosts from './recent-posts';
+
+
 
 
 export default class App extends Component {
@@ -8,6 +12,8 @@ export default class App extends Component {
       <div>
         <div>
           <Logo></Logo>
+          <SearchBar></SearchBar>
+          <RecentPosts></RecentPosts>
         </div>
       </div>
     );
