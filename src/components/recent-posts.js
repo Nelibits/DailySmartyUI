@@ -6,12 +6,12 @@ import * as actions from '../actions';
 
 import { Field, reduxForm} from 'redux-form';
 
-class SearchBar extends Component {
+class RecentPosts extends Component {
 
   componentDidMount() {
     this.props.fetchRecentPosts();
   }
-  
+
   render() {
     return (
       <div className="recent-posts">
@@ -31,4 +31,4 @@ class SearchBar extends Component {
   }
 }
 
-export default connect(null, actions)(SearchBar);
+export default connect(null, actions)(RecentPosts);
