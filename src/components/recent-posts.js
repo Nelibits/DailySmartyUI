@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
+
+import { connect } from 'react-redux';
+
+import * as actions from '../actions';
+
 import { Field, reduxForm} from 'redux-form';
 
-export default class SearchBar extends Component {
+class SearchBar extends Component {
   render() {
     return (
       <div className="recent-posts">
@@ -20,3 +25,5 @@ export default class SearchBar extends Component {
     );
   }
 }
+
+export default connect(null, actions)(SearchBar);
