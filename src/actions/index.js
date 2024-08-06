@@ -4,12 +4,12 @@ import axios from 'axios';
 
 export function fetchRecentPosts() {
     return function(dispatch) {
-        axios.get('https://pokeapi.co/api/v2/pokemon-species')
+        axios.get('https://jsonplaceholder.typicode.com/posts')
         .then(response => {
-            console.log(response.data.results);
+            console.log(response.data.posts);
             dispatch({
                 type: SET_RECENT_POSTS,
-                payload: response.data.results
+                payload: response.data.posts
             })
         })
     }
